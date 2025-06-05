@@ -5,5 +5,5 @@ interface TwinkleTextProps {
     hover?: boolean;
     groupHover?: boolean;
 }
-export declare const TwinkleText: React.FC<TwinkleTextProps>;
+export declare const TwinkleText: ({ children, className, hover, groupHover, }: TwinkleTextProps) => import("react/jsx-runtime").JSX.Element;
 export {};
