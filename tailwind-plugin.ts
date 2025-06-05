@@ -1,7 +1,7 @@
 import plugin from "tailwindcss/plugin";
 
-const shimmerBefore: Record<string, string> = {
-  content: "attr(text-shimmer-data)",
+const twinkleBefore: Record<string, string> = {
+  content: "attr(text-twinkle-data)",
   position: "absolute",
   inset: "0",
   "pointer-events": "none",
@@ -17,43 +17,43 @@ const shimmerBefore: Record<string, string> = {
 
 export default plugin(function ({ addUtilities, addComponents }: any) {
   addUtilities({
-    "@keyframes text-shimmer": {
+    "@keyframes text-twinkle": {
       "0%": { "background-position": "150% 0" },
       "100%": { "background-position": "-250% 0" },
     },
   });
 
   addComponents({
-    ".text-shimmer": {
+    ".text-twinkle": {
       position: "relative",
       display: "inline-block",
     },
-    ".text-shimmer::before": {
-      ...shimmerBefore,
-      animation: "text-shimmer 5s linear infinite",
+    ".text-twinkle::before": {
+      ...twinkleBefore,
+      animation: "text-twinkle 5s linear infinite",
     },
-    ".hover-text-shimmer": {
+    ".hover-text-twinkle": {
       position: "relative",
       display: "inline-block",
     },
-    ".hover-text-shimmer::before": {
-      ...shimmerBefore,
+    ".hover-text-twinkle::before": {
+      ...twinkleBefore,
       opacity: "0",
     },
-    ".hover-text-shimmer:hover::before": {
-      animation: "text-shimmer 5s linear infinite",
+    ".hover-text-twinkle:hover::before": {
+      animation: "text-twinkle 5s linear infinite",
       opacity: "1",
     },
-    ".group-hover-text-shimmer": {
+    ".group-hover-text-twinkle": {
       position: "relative",
       display: "inline-block",
     },
-    ".group-hover-text-shimmer::before": {
-      ...shimmerBefore,
+    ".group-hover-text-twinkle::before": {
+      ...twinkleBefore,
       opacity: "0",
     },
-    ".group:hover .group-hover-text-shimmer::before": {
-      animation: "text-shimmer 5s linear infinite",
+    ".group:hover .group-hover-text-twinkle::before": {
+      animation: "text-twinkle 5s linear infinite",
       opacity: "1",
     },
   });
