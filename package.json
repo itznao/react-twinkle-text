@@ -8,7 +8,8 @@
   "author": "itznao",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "react": ">=16.0.0",
+    "tailwindcss": ">=2.0.0"
   },
   "repository": {
     "type": "git",
