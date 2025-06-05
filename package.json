@@ -1,9 +1,9 @@
 {
   "name": "react-twinkle-text",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React twinkle text effect using Tailwind-compatible styles.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/src/index.d.ts",
   "files": [
     "dist",
     "tailwind-plugin.ts"
@@ -34,9 +34,10 @@
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
     "tailwindcss": "^4.1.8",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist"
   }
 }
