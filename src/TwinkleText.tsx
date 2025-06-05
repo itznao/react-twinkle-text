@@ -3,7 +3,14 @@ import { twinkleCSS } from "./twinkleStyles";
 
 let cssInjected = false;
 
-export const twinkleText = ({
+interface TwinkleTextProps {
+  children: React.ReactNode;
+  className?: string;
+  hover?: boolean;
+  groupHover?: boolean;
+}
+
+export const TwinkleText: React.FC<TwinkleTextProps> = ({
   children,
   className = "",
   hover = false,
@@ -25,7 +32,10 @@ export const twinkleText = ({
     : "text-twinkle";
 
   return (
-    <span text-twinkle-data={children} className={`${twinkleClass} ${className}`}>
+    <span
+      data-text-twinkle={typeof children === "string" ? children : undefined}
+      className={`${twinkleClass} ${className}`}
+    >
       {children}
     </span>
   );
