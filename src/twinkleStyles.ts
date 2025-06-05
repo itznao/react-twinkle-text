@@ -14,7 +14,7 @@ export const twinkleCSS = `
 .text-twinkle::before,
 .hover-text-twinkle::before,
 .group-hover-text-twinkle::before {
-  content: attr(text-twinkle-data);
+  content: attr(data-text-twinkle);
   position: absolute;
   inset: 0;
   pointer-events: none;
