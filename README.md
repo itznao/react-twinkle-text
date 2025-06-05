@@ -1,6 +1,12 @@
 # React Twinkle Text
 React twinkle text effect using Tailwind-compatible styles.
 
+## Example
+Here is an example of the Twinkle Text in one of my projects:<br/><br/>
+<a class="link" href="https://github.com/itznao/react-twinkle-text/blob/master/example.gif">
+    <img class="image" src="example.gif" alt=" ">
+</a>
+
 ## Installation
 
 ```bash
