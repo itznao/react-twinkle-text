@@ -10,12 +10,12 @@ interface TwinkleTextProps {
   groupHover?: boolean;
 }
 
-export const TwinkleText: React.FC<TwinkleTextProps> = ({
+export const TwinkleText = ({
   children,
   className = "",
   hover = false,
   groupHover = false,
-}) => {
+}: TwinkleTextProps) => {
   useEffect(() => {
     if (!cssInjected) {
       const style = document.createElement("style");

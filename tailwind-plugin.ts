@@ -1,5 +1,4 @@
 import plugin from "tailwindcss/plugin";
-import type { PluginAPI } from "tailwindcss/types/config";
 
 const shimmerBefore: Record<string, string> = {
   content: "attr(text-shimmer-data)",
@@ -16,7 +15,7 @@ const shimmerBefore: Record<string, string> = {
     "drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 2px rgba(255,255,255,0.5))",
 };
 
-export default plugin(function ({ addUtilities, addComponents }: PluginAPI) {
+export default plugin(function ({ addUtilities, addComponents }: any) {
   addUtilities({
     "@keyframes text-shimmer": {
       "0%": { "background-position": "150% 0" },
