@@ -1,0 +1,21 @@
+{
+  "name": "react-twinkle-text",
+  "version": "1.0.0",
+  "description": "React twinkle text effect using Tailwind-compatible styles.",
+  "main": "src/index.js",
+  "files": ["src"],
+  "keywords": ["react", "tailwind", "twinkle", "text", "component"],
+  "author": "itznao",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itznao/react-twinkle-text"
+  },
+  "bugs": {
+    "url": "https://github.com/itznao/react-twinkle-text/issues"
+  },
+  "homepage": "https://github.com/itznao/react-twinkle-text#readme"
+}
